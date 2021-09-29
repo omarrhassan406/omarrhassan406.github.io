@@ -16,7 +16,7 @@ body{
 }
 .container{
     height: 100%;
-    width: 60%;
+    width: 100%;
     margin: auto;
     background-color: white;
     position: relative;
@@ -438,7 +438,7 @@ body{
     }
     .upprPhoto h1{font-size: 23px;}
     .container{
-        width: 80%;
+        width: 100%;
     }
     .Form{
         top: 150px;
