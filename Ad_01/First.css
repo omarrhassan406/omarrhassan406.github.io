@@ -7,13 +7,15 @@
 
 html{
     scroll-behavior: smooth;
+    height: 100%;
 }
 body{
     background-color: #F2F2F2; 
     perspective: 1000px;
+    height: 100%;
 }
 .container{
-    height: 100vh;
+    height: 100%;
     width: 60%;
     margin: auto;
     background-color: white;
@@ -36,12 +38,11 @@ body{
     padding-top: 5px;
 }
 .btn1{
-    width: 300px;
-    height: 100px;
+    width: 33%;
+    height: 14%;
     background-color: #2AFF22;
     text-align: center;
     position: absolute;
-    bottom: 120px;
     left: 70px;
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
@@ -59,12 +60,11 @@ body{
     background-color: #39BC34;
 }
 .btn2{
-    width: 300px;
-    height: 100px;
+    width: 33%;
+    height: 14%;
     background-color: #FF0000;
     text-align: center;
     position: absolute;
-    bottom: 120px;
     right: 70px;
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
@@ -92,7 +92,7 @@ body{
 }
 .body2{
     width: auto;
-    height: 100vh;
+    height: 100%;
     background-color: black;
     margin-top: -100vh;
     z-index: 2;
@@ -246,14 +246,16 @@ body{
 /*---Media Queries --*/
 @media (max-width: 1235px) {
     .btn1{
-        left: 200px;
-        height: 80px;
-        bottom: 160px;
+        left: 20%;
+        height: 12%;
+        width: 50%;
+        margin-top: 3%;
     }
     .btn2{
-        left: 200px;
-        height: 80px;
-        bottom: 50px;
+        left: 20%;
+        height: 12%;
+        width: 50%;
+        margin-top: 18%;
     }
     .btn1 h3{
         padding-top: 5px;
@@ -275,19 +277,13 @@ body{
     .FormBack{
         top: 180px;
         left: 420px;
+        backface-visibility: hidden;
     }
 }
 
 @media (max-width: 1090px) {
-    .btn1{
-        left: 180px;
-        height: 60px;
-        bottom: 160px;
-    }
     .btn2{
-        left: 180px;
-        height: 60px;
-        bottom: 50px;
+        margin-top: 20%;
     }
     .btn1 h3{
         padding-top: 5px;
@@ -312,20 +308,11 @@ body{
     .FormBack{
         top: 180px;
         left: 360px;
+        backface-visibility: hidden;
     }
 }
 
 @media (max-width: 992px) {
-    .btn1{
-        left: 140px;
-        height: 60px;
-        bottom: 160px;
-    }
-    .btn2{
-        left: 140px;
-        height: 60px;
-        bottom: 50px;
-    }
     .btn1 h3{
         padding-top: 5px;
         font-size: 20px;
@@ -349,19 +336,13 @@ body{
     .FormBack{
         top: 180px;
         left: 300px;
+        backface-visibility: hidden;
     }
 }
 
 @media (max-width: 900px) {
-    .btn1{
-        left: 100px;
-        height: 60px;
-        bottom: 160px;
-    }
     .btn2{
-        left: 100px;
-        height: 60px;
-        bottom: 50px;
+        margin-top: 30%;
     }
     .btn1 h3{
         padding-top: 5px;
@@ -386,21 +367,12 @@ body{
     .FormBack{
         top: 180px;
         left: 270px;
+        backface-visibility: hidden;
     }
 }
 
 
 @media (max-width: 800px) {
-    .btn1{
-        left: 80px;
-        height: 60px;
-        bottom: 200px;
-    }
-    .btn2{
-        left: 80px;
-        height: 60px;
-        bottom: 90px;
-    }
     .btn1 h3{
         padding-top: 5px;
         font-size: 20px;
@@ -430,6 +402,7 @@ body{
         left: 200px;
         width: 330px;
         height: 310px;
+        backface-visibility: hidden;
     }
     .FormBack h3{
         margin-top: 15px;
@@ -447,16 +420,6 @@ body{
 }
 
 @media (max-width: 710px) {
-    .btn1{
-        left: 110px;
-        height: 60px;
-        bottom: 200px;
-    }
-    .btn2{
-        left: 110px;
-        height: 60px;
-        bottom: 90px;
-    }
     .btn1 h3{
         padding-top: 5px;
         font-size: 20px;
@@ -485,21 +448,13 @@ body{
     .FormBack{
         top: 150px;
         left: 180px;
+        backface-visibility: hidden;
     }
 }
 
 
 @media (max-width: 620px) {
-    .btn1{
-        left: 90px;
-        height: 60px;
-        bottom: 200px;
-    }
-    .btn2{
-        left: 90px;
-        height: 60px;
-        bottom: 90px;
-    }
+    .container{width: 100%;}
     .btn1 h3{
         padding-top: 5px;
         font-size: 20px;
@@ -517,9 +472,6 @@ body{
         margin-top: 50px;
     }
     .upprPhoto h1{font-size: 23px;}
-    .container{
-        width: 80%;
-    }
     .Form{
         top: 150px;
         left: 130px;
@@ -528,21 +480,12 @@ body{
     .FormBack{
         top: 150px;
         left: 130px;
+        backface-visibility: hidden;
     }
 }
 
 
 @media (max-width: 555px) {
-    .btn1{
-        left: 70px;
-        height: 60px;
-        bottom: 200px;
-    }
-    .btn2{
-        left: 70px;
-        height: 60px;
-        bottom: 90px;
-    }
     .btn1 h3{
         padding-top: 5px;
         font-size: 20px;
@@ -560,9 +503,6 @@ body{
         margin-top: 50px;
     }
     .upprPhoto h1{font-size: 23px;}
-    .container{
-        width: 80%;
-    }
     .Form{
         top: 150px;
         left: 130px;
@@ -575,6 +515,7 @@ body{
         left: 130px;
         width: 300px;
         height: 300px;
+        backface-visibility: hidden;
     }
     .FormBack h3{
         margin-top: 15px;
@@ -594,16 +535,6 @@ body{
 }
 
 @media (max-width: 500px) {
-    .btn1{
-        left: 30px;
-        height: 60px;
-        bottom: 200px;
-    }
-    .btn2{
-        left: 30px;
-        height: 60px;
-        bottom: 90px;
-    }
     .btn1 h3{
         padding-top: 5px;
         font-size: 20px;
@@ -621,9 +552,6 @@ body{
         margin-top: 50px;
     }
     .upprPhoto h1{font-size: 23px;}
-    .container{
-        width: 80%;
-    }
     .Form{
         top: 150px;
         left: 80px;
@@ -631,20 +559,11 @@ body{
     .FormBack{
         top: 150px;
         left: 80px;
+        backface-visibility: hidden;
     }
 }
 
 @media (max-width: 420px) {
-    .btn1{
-        left: 10px;
-        height: 60px;
-        bottom: 200px;
-    }
-    .btn2{
-        left: 10px;
-        height: 60px;
-        bottom: 90px;
-    }
     .btn1 h3{
         padding-top: 5px;
         font-size: 20px;
@@ -662,9 +581,6 @@ body{
         margin-top: 50px;
     }
     .upprPhoto h1{font-size: 23px;}
-    .container{
-        width: 80%;
-    }
     .Form{
         width: 300px;
         height: 340px;
@@ -675,6 +591,7 @@ body{
         width: 300px;
         height: 340px;
         left: 50px;
+        backface-visibility: hidden;
     }
     .FormBack h3{
         margin-top: 15px;
